@@ -1,0 +1,85 @@
+@import url(responsive.css); 
+ html{
+    box-sizing: border-box;
+}
+:root{
+    --bgcolor:black;
+    --textcolor:white;
+}
+body{
+    /* background-color: var(--bgcolor); */
+    margin: 0;
+}
+.conatiner{
+    width: 100%;
+    height: 50%;
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--textcolor);
+    position: relative;
+}
+/* Logo can be change size and position */
+.navbrand{
+    margin-left: 1%;
+}
+.menu{
+    transition: all 0.2s;
+}
+.menulist{
+    background-color: var(--bgcolor);
+    justify-content: center;
+    align-items: center;
+}
+.listitem{
+    margin-right: 35px;
+    list-style-type: none;
+}
+.listlink{
+    color: var(--textcolor);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menubtn{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.line{
+    height: 4px;
+    margin: 3px 0;
+    background-color: var(--textcolor);
+    border-radius: 5vmax;
+    transition: all 0.2s;
+}
+.line1{
+    width: 30%;
+
+}
+.lineactive1{
+    width: 90%;
+    transform-origin: right;
+    transform: translate(-5px,-3px) rotate(-45deg);
+}
+.line2{
+    width: 50%;
+}
+.lineactive2{
+    width: 90%;
+    transform: translate(-100%);
+    opacity: 0;
+}
+.line3{
+    width: 70%;
+}
+.lineactive3{
+    width: 90%;
+    transform-origin: right;
+    transform: translate(-5px,3px) rotate(45deg);
+}
