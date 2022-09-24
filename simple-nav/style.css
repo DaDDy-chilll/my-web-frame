@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    background-color: red;
+}
+.logo{
+    font-size: 1.8rem;
+    color: rgb(5, 5, 116);
+    padding-left: 20px;
+}
+.menuicon{
+    padding-right: 20px;
+    cursor: pointer;
+}
+.menuicon .line{
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: black;
+}
+.menulist{
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: lightblue;
+    transition: all .2s;
+}
+.menulist a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+.menulist a:hover{
+    background-color: lightcoral;
+}
+.hide{
+    transform: translateY(-100%);
+}
+@media screen and (min-width:600px) {
+    .menulist{
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+    }
+
+    .menulist a{
+        display: inline;
+        padding: 15px 20px;
+    }
+    .menuicon{
+        display: none;
+    }
+}
