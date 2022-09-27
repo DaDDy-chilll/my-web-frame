@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(36, 253, 144);
+}
+.nav{
+    width: 100%;
+    padding: 6px 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+.menulist{
+    transition: all 0.5s;
+}
+.menulist ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.menulist ul li{
+margin: 0 5px;
+}
+.menulist ul li a:hover{
+    background-color:rgb(36, 253, 144) ;
+    color: white;
+}
+.menulist ul li a{
+    color: rgb(36, 253, 144);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+.nav .logo{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    z-index: 10;
+}
+
+@media screen and (max-width:768px) {
+
+    .menuicon{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: rgba(223, 222, 222, 0.568);
+        border-radius: 3px;
+        padding-left: 5px;
+        margin-right: 10px;
+        transition: all 0.5s;
+    }
+    .line{
+
+        height: 4px;
+        background-color: black;
+        margin: 3px 0;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .line1{
+        width: 30%;
+        transform-origin: left;
+    }
+    .line1active{
+        width: 100%;
+        transform:translate(2px,-3px) rotate(45deg);
+    }
+    .line2{
+        width: 50%;
+        transform-origin: center;
+    }
+    .line2active{
+        width: 100%;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    
+    .line3{
+        width: 80%;
+        transform-origin: left;
+    }
+    .line3active{
+        width: 100%;
+        transform:translate(1px,2px) rotate(-45deg);
+    }
+    .menulist{
+        width: 90%;
+        border-radius: 10px;
+        position: absolute;
+        top: 80px;
+        left: 5%;
+        right: 5%;
+        background-color: white;
+        transition: all 0.5s;
+        opacity: 0;
+        transform: translateY(-1000%);
+        z-index: -1;
+    }
+    .menulistactive{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .menulist ul{
+        display: block;
+        text-align: center;
+
+
+    }
+    .menulist ul li{
+        margin: 20px 0;
+
+    }
+}

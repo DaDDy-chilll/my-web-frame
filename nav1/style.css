@@ -54,6 +54,31 @@ nav{
         border-radius: 5vmax;
         transition: all 0.2s;
     }
+    .line1{
+        width: 30%;
+    
+    }
+    .lineactive1{
+        width: 90%;
+        transform-origin: right;
+        transform: translate(-5px,-3px) rotate(-45deg);
+    }
+    .line2{
+        width: 50%;
+    }
+    .lineactive2{
+        width: 90%;
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    .line3{
+        width: 70%;
+    }
+    .lineactive3{
+        width: 90%;
+        transform-origin: right;
+        transform: translate(-5px,3px) rotate(45deg);
+    }
     .menulist{
         position: absolute;
         top: 80px;
