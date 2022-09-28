@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+:root{
+    --bgcolor:rgb(161, 152, 243);
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: rgb(36, 253, 144);
+    background-color: var(--bgcolor);
 }
+/* Start Nav Bar CSS */
 .nav{
     width: 100%;
     padding: 6px 0;
@@ -28,11 +33,11 @@ body{
 margin: 0 5px;
 }
 .menulist ul li a:hover{
-    background-color:rgb(36, 253, 144) ;
+    background-color:var(--bgcolor);
     color: white;
 }
 .menulist ul li a{
-    color: rgb(36, 253, 144);
+    color: var(--bgcolor);
     text-decoration: none;
     padding: 10px 20px;
     font-family: 'Bebas Neue', cursive;
@@ -46,9 +51,51 @@ margin: 0 5px;
     font-family: 'Fira Sans Condensed', sans-serif;
     z-index: 10;
 }
+/* End Nav Bar CSS */
+/* Start Home CSS */
+.home-container{
+    width: 100%;
+    height:  647px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-content{
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home-content h1{
+    color: white;
+    font-size: 60px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--bgcolor);
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+.home-content p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+.home-img{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img img{
+    width: 100%;
+}
+/* End Home CSS */
 
 @media screen and (max-width:768px) {
-
+/* Start Nav Bar CSS */
     .menuicon{
         width: 40px;
         height: 40px;
@@ -60,6 +107,7 @@ margin: 0 5px;
         border-radius: 3px;
         padding-left: 5px;
         margin-right: 10px;
+        overflow: hidden;
         transition: all 0.5s;
     }
     .line{
@@ -124,4 +172,7 @@ margin: 0 5px;
         margin: 20px 0;
 
     }
+    /* End Nav Bar CSS */
+    /* Start Home CSS */
+    /* End Home CSS */
 }

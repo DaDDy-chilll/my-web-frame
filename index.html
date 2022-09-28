@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Start Nav Bar Section -->
     <nav class="nav">
         <a href="#" class="logo">Logo</a>
         <div class="menuicon">
@@ -32,20 +34,21 @@
             </ul>
         </div>
     </nav>
-    <script>
-        const menuicon = document.querySelector('.menuicon');
-        const lines = document.querySelectorAll('.line');
-        const menulist = document.querySelector('.menulist');
+    <!-- End Nav Bar Section -->
+    <!-- Start Home Section -->
+    <Section class="home-container">
+        <div class="home-content">
+            <h1>Hello Flower</h1>
+            <p>~Flower of the Gladiators, Integrity, Strength, Victory~</p>
+        </div>
+        <div class="home-img">
+            <img src="img/homeflower-removebg-preview.png" alt="home flower">
+        </div>
+    </Section>
+    <!-- End Home Section -->
+    <!-- Start Services Section -->
+    <!-- End Services Section -->
 
-        menuicon.addEventListener('click',()=>{
-            console.log('hi');
-            menulist.classList.toggle('menulistactive');
-            for (let i = 0; i < lines.length; i++) {
-                const element = lines[i];
-                element.classList.toggle(`line${i+1}active`)
-            }
-            
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
