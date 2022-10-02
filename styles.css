@@ -19,6 +19,9 @@ body{
     display: flex;
     justify-content: space-between;
     z-index: 10;
+    position: fixed;
+    top: 0;
+   
 }
 .menulist{
     transition: all 0.5s;
@@ -55,10 +58,11 @@ margin: 0 5px;
 /* Start Home CSS */
 .home-container{
     width: 100%;
-    height:  647px;
+    height:  558px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10%;
 }
 .home-content{
     width: 40%;
@@ -96,6 +100,10 @@ margin: 0 5px;
 
 @media screen and (max-width:768px) {
 /* Start Nav Bar CSS */
+    .nav{
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.37);
+        z-index: 10;
+    }
     .menuicon{
         width: 40px;
         height: 40px;
@@ -161,6 +169,7 @@ margin: 0 5px;
     .menulistactive{
         transform: translateY(0);
         opacity: 1;
+        z-index: 10;
     }
     .menulist ul{
         display: block;
@@ -174,5 +183,15 @@ margin: 0 5px;
     }
     /* End Nav Bar CSS */
     /* Start Home CSS */
+    .home-container{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .home-content{
+        width: 90%;
+    }
+    .home-img{
+        width: 90%;
+    }
     /* End Home CSS */
 }
